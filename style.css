@@ -33,7 +33,6 @@ body {
 
 img {
     max-width: 100%;
-    height: auto;
 }
 
 /* Typography */
@@ -41,133 +40,16 @@ h1 {
     color: var(--White);
     font-family: Inter;
     font-weight: 700;
-    margin-top: 1em;
-    line-height: 1.2;
 
 }
 
 /* Layout */
-.container {
-    width: 90%;
-    margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 /* Card */
-.card {
-    width: 90%;
-    background: var(--Dark-desaturated-blue);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    /* margin: 0 auto; */
-}
 
 
 
-.card__img {
-    width: 100%;
-    padding-top: 73%;
-    background: url('images/image-header-mobile.jpg') no-repeat center;
-    background-color: var(--Soft-violet);
-    background-blend-mode: multiply;
-    background-size: cover;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  flex-grow: 1;
-}
-
-.card__content {
-    padding: 0 1.4em;
-    flex-grow: 0;
-
-}
-
-.card__title--accent {
-    color: var(--Soft-violet);
-}
-
-.stats {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-}
-
-.stats>* {
-    margin: .75em 0;
-}
-
-.stats--accent {
-    font-weight: 700;
-    color: var(--White);
-    font-size: 1.25rem;
-}
-
-/* Media Query-Tablet */
-
-@media (min-width: 37.5em){
-
-    .card__content {
-        width: 70%;
-        margin: 0 auto;
-    }
-    .stats {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-/* Media Query-Desktop */
-
-@media (min-width: 62.5em) {
-    body {
-        text-align: left;
-        font-size: 1.25rem;
-    }
-    h1 {
-        font-size: 2rem;
-        margin: 0 0 2rem;
-    }
-    .card {
-        flex-direction: row-reverse;
-        align-items: center;
-        border: 1px solid pink;
-        max-height: 60vh;
-    }
-    .card * {
-        flex-grow: 1;
-    }
-    .card__img {
-        background: url('images/image-header-desktop.jpg') no-repeat center;
-        background-color: var(--Soft-violet);
-        background-blend-mode: multiply;
-        background-size: cover;
-        border-bottom-right-radius: 5px;
-        border-top-right-radius: 5px;
-        height: 100%;
-        /* padding-top: 0; */
-    }
-
-    .card__content {
-    padding: 3em;
-    max-height: 60vh;
-    height: 100%;
-
-    }
-
-
-    .stats {
-        flex-direction: row;
-        margin-top: 4em;
-    }
- 
-    .stats--accent {
-        font-size: 1.5rem;
-    }
-}
 
 /* Attribution */
 .attribution {
