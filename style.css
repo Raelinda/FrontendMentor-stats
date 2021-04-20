@@ -40,17 +40,121 @@ h1 {
     color: var(--White);
     font-family: Inter;
     font-weight: 700;
-
+    line-height: 1.2;
+    margin-top: 1.5em;
+}
+.card__title--accent {
+    color: var(--Soft-violet)
 }
 
 /* Layout */
-
+.container {
+    width: 90%;
+    margin: 0 auto;
+    height: min(100vh, 100vh);
+    display: flex;
+    align-items: center;
+}
 
 /* Card */
+.card {
+    background: var(--Dark-desaturated-blue);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    
+ 
+}
 
+.card__img {
+    width: 100%;
+    padding-top: 73%;
+    background: url('images/image-header-mobile.jpg') no-repeat center;
+    background-color: var(--Soft-violet);
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-radius: 5px 5px 0 0;
+}
+.card__content {
+    padding: 0 1.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+/* width: 100%; */
+}
 
+.stats>* {
+    margin: 1.5em 0;
+}
+.stats--accent {
+    font-weight: 700;
+    font-size: 1.5em;
 
+}
+/* Media Query-TABLET */
+@media (min-width: 43.75em) {  
+.container {
+    /* align-items: flex-start; */
+}
 
+.card__content {
+padding: 1.75rem;
+}
+.card__text {
+    max-width: 70%;
+    margin: 1.5em 0;
+}
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+}
+}
+/* Media Query--DESKTOP */
+@media (min-width: 68.75em) {
+    
+body {
+    text-align: left;
+}
+h1 {
+    font-size: clamp(2.25rem, 2.5vw, 2.5rem);
+}
+.card {
+    flex-direction: row-reverse;
+    /* align-items: center; */
+    width: 90%;
+    height: 60vh;
+    margin: 0 auto;
+    
+}
+.card__img {
+    /* flex-grow: 1; */
+    width: 50%;
+    height: 100%;
+    padding-top: 0;
+    background: url('images/image-header-desktop.jpg') no-repeat center;
+    background-color: var(--Soft-violet);
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-radius: 0 5px 5px 0;
+}
+.card__content {
+    height: 100%;
+    /* flex-grow: 1;  */
+padding: 0 5rem;
+width: 50%;
+}
+.card__text {
+    max-width: 100%;
+     font-size: clamp(1rem, 1.5vw, 1.25rem); 
+}
+.stats {
+    justify-content: space-between;
+    margin-top: 3em;
+}
+.stats--accent {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+}
 /* Attribution */
 .attribution {
     font-size: 11px;
