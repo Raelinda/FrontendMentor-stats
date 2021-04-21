@@ -71,6 +71,7 @@ h1 {
 .card__img {
     background-color: var(--Soft-violet);
     border-radius: 5px 5px 0 0;
+    min-height: 480px;
 }
 
 .card__img--mobile {
