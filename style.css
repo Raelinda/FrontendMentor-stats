@@ -141,9 +141,11 @@ h1 {
 }
 
 /* Media Query-DESKTOP */
-@media (min-width: 68.25em) {
+@media (min-width: 75em) {
     body {
         text-align: left;
+        font-size: 1.15vw;
+        line-height: 1.4;
     }
 
     h1 {
@@ -174,12 +176,11 @@ h1 {
         object-fit: cover;
   
     }
-    .card__text {
-        font-size: 1.25vw;
-
-    }
+.card__content {
+    padding: 0 5.5rem;
+}
     .stats {
-        margin: 4vw auto 0;
+        margin: 4.5vw auto 0;
     }
 }
 
