@@ -27,12 +27,11 @@
 body {
     background: var(--Very-dark-blue);
     color: var(--Slightly-transparent-white);
-    margin: 0;
-    font-size: .94rem;
     font-family: 'Lexend Deca', sans-serif;
+    font-size: .94rem;
     font-weight: normal;
-    text-align: center;
     line-height: 1.6;
+    text-align: center;
 }
 
 img {
@@ -53,10 +52,12 @@ h1 {
 /* Layout */
 .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 0 auto;
     min-height: 100vh;
-    width: min(95%, 76.25em);
+    width: 90%;
 }
 
 /* Images */
@@ -64,10 +65,10 @@ h1 {
 .card__img {
     background-color: var(--Soft-violet);
     border-radius: 5px 5px 0 0;
+
 }
 
 .card__img--mobile {
-    border-radius: 5px 5px 0 0;
     mix-blend-mode: multiply;
     object-fit: cover;
     width: 100%;
@@ -82,12 +83,12 @@ h1 {
 .card {
     display: flex;
     flex-direction: column;
-    background: var(--Dark-desaturated-blue);
+    background-color: var(--Dark-desaturated-blue);
     border-radius: 5px;
 }
 
 .card>* {
-    width: 100%;
+    flex-grow: 1;
 }
 
 .card__content {
@@ -114,14 +115,19 @@ h1 {
 
 /* Media Query-TABLET */
 @media (min-width: 37.5em) {
-
-    h1 {
-        font-size: clamp(2.25rem, 3vw, 2.5rem);
+    .card__content {
+        padding: 0 5rem;
     }
 
-    .card__content {
-        padding: 4rem;
+    h1 {
+        font-size: 2.5rem;
+        max-width: 75%;
+        margin: 1em auto;
+    }
 
+    .card__text {
+        font-size: clamp(1.125rem, 2vw, 1.25rem);
+        /* font-size: 1.25rem; */
     }
 
     .stats {
@@ -129,52 +135,49 @@ h1 {
         justify-content: space-between;
     }
 
-    .stats * {
+    .stats>* {
         margin: 0;
-        width: 100%;
     }
 }
 
 /* Media Query-DESKTOP */
 @media (min-width: 68.25em) {
-    h1 {
-        font-size: 2rem;
-    }
-
     body {
         text-align: left;
+    }
+
+    h1 {
+        max-width: 100%;
     }
 
     .card {
         flex-direction: row-reverse;
         align-items: center;
-        margin: 0 auto;
-
     }
 
-    .card__img {
-        border-radius: 0 5px 5px 0;
-        height: 100%;
-        width: 100%;
+    .card>* {
+        width: 50%;
     }
 
     .card__img--mobile {
         display: none;
     }
-
+.card__img {
+    border-radius: 0 5px 5px 0;
+    height: 100%;
+}
     .card__img--desktop {
         display: block;
         border-radius: 0 5px 5px 0;
+        height: 100%;
+        width: 100%;
         mix-blend-mode: multiply;
         object-fit: cover;
-    }
-
-    .card__content {
-        padding: 0 5rem;
+  
     }
 
     .stats {
-        margin: 4em 0 0;
+        margin: 4em auto 0;
     }
 }
 
