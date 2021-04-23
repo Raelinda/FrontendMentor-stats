@@ -169,7 +169,6 @@ h1 {
     .card__img--desktop {
         display: block;
         border-radius: 0 5px 5px 0;
-        height: 100%;
         width: 100%;
         mix-blend-mode: multiply;
         object-fit: cover;
