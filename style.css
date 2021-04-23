@@ -1,3 +1,4 @@
+  
 /* Body basics */
 *,
 *::before,
@@ -127,7 +128,6 @@ h1 {
 
     .card__text {
         font-size: clamp(1.125rem, 2vw, 1.25rem);
-        /* font-size: 1.25rem; */
     }
 
     .stats {
@@ -174,9 +174,12 @@ h1 {
         object-fit: cover;
   
     }
+    .card__text {
+        font-size: 1.25vw;
 
+    }
     .stats {
-        margin: 4em auto 0;
+        margin: 4vw auto 0;
     }
 }
 
