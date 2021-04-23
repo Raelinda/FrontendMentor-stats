@@ -136,7 +136,7 @@ h1 {
 }
 
 /* Media Query-DESKTOP */
-@media (min-width: 62.5em) {
+@media (min-width: 68.25em) {
     h1 {
         font-size: 2rem;
     }
