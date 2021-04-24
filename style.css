@@ -141,7 +141,7 @@ h1 {
 }
 
 /* Media Query-DESKTOP */
-@media (min-width: 75em) {
+@media (min-width: 68.25em) {
     body {
         text-align: left;
         font-size: 1.15vw;
